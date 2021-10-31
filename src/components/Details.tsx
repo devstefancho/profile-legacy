@@ -1,9 +1,9 @@
-const Details: React.FC = () => {
+import { Resume } from '.';
+
+export const Details: React.FC = () => {
   return (
     <div>
-      <h2>Detail....</h2>
+      <Resume />
     </div>
   );
 };
-
-export default Details;
