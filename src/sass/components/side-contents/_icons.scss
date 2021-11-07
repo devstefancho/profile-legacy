@@ -1,0 +1,13 @@
+.icon-container {
+  width: 20rem;
+  margin: 0 auto;
+
+  .icon {
+    cursor: pointer;
+    opacity: 0.5;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

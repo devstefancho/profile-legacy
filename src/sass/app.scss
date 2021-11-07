@@ -1,7 +1,11 @@
+@import 'bootstrap/scss/bootstrap';
 @import './base/base';
 
 @import './abstract/variables';
-
+@import './abstract/mixins';
 @import './layout/layout';
 @import './layout/main';
 @import './layout/side-content';
+
+@import './components/side-contents/avartar';
+@import './components/side-contents/icons';

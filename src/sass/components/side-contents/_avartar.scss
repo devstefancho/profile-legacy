@@ -1,0 +1,29 @@
+.avartar-container {
+  background-color: transparent;
+  width: 20rem;
+  height: 26rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 3rem;
+
+  .avartar-image {
+    background-color: $icon-color;
+    width: 100%;
+    height: 20rem;
+    border-radius: 50%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+  }
+
+  .avartar-name {
+    margin-top: 1rem;
+    text-align: center;
+    color: $icon-color;
+    font-size: 2rem;
+  }
+}

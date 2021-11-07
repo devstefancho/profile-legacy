@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { Main, SideContent, Details } from '.';
+import { Main, SideContentContainer, Details } from '.';
 
 export const Layout: React.FC = () => {
   return (
@@ -14,7 +14,7 @@ export const Layout: React.FC = () => {
           </Switch>
         </section>
         <section className='side'>
-          <SideContent />
+          <SideContentContainer />
         </section>
       </div>
     </Router>
