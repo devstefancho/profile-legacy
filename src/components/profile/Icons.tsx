@@ -28,7 +28,7 @@ export const Icons: React.FC = () => {
   };
 
   return (
-    <div className='icon-container d-flex p-2 justify-content-between'>
+    <div className='icon-container d-flex justify-content-between'>
       <div className='icon'>
         <a href={url.github} target='_blank'>
           <img src={Github} alt='github' />

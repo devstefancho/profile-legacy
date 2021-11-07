@@ -26,4 +26,25 @@
     color: $icon-color;
     font-size: 2rem;
   }
+
+  @media (max-width: $bp-mobile) {
+    $img-height: 25rem;
+    $img-min-width: 62.5rem; // 500px
+    margin: 0;
+    width: 100%;
+    height: auto;
+
+    .avartar-image {
+      height: $img-height;
+      min-width: $img-min-width;
+      border-radius: 0;
+
+      img {
+        border-radius: 0;
+        height: $img-height;
+        min-width: $img-min-width;
+        object-fit: cover;
+      }
+    }
+  }
 }
