@@ -1,10 +1,13 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { Main, SideContentContainer, Details } from '.';
+import { Main, ProfileContainer, Details } from '.';
 
 export const Layout: React.FC = () => {
   return (
     <Router>
-      <div className='flex container'>
+      <div className='layout-container'>
+        <section className='profile'>
+          <ProfileContainer />
+        </section>
         <section className='main'>
           <Main />
           <Switch>
@@ -12,9 +15,6 @@ export const Layout: React.FC = () => {
               <Details />
             </Route>
           </Switch>
-        </section>
-        <section className='side'>
-          <SideContentContainer />
         </section>
       </div>
     </Router>

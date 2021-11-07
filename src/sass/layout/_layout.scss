@@ -1,5 +1,34 @@
-.flex.container {
-  display: flex;
-  margin: 0 40px;
-  min-height: 100vh;
+.layout-container {
+  .main {
+    background-color: $white-color;
+  }
+  .profile {
+    background-color: $primary-color;
+  }
+
+  @media (min-width: $bp-mobile) {
+    $margin: 20px;
+    $height: 150vh;
+
+    position: relative;
+    margin: 0 $margin * 2;
+    min-height: 150vh;
+
+    .profile {
+      position: fixed;
+      right: $margin;
+      top: 0;
+      width: 30rem;
+      height: $height;
+    }
+  }
+
+  @media (max-width: $bp-mobile) {
+    display: flex;
+    flex-direction: column;
+
+    .profile {
+      height: 40vh;
+    }
+  }
 }
