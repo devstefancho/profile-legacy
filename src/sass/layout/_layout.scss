@@ -26,9 +26,5 @@
   @media (max-width: $bp-mobile) {
     display: flex;
     flex-direction: column;
-
-    .profile {
-      height: auto;
-    }
   }
 }
