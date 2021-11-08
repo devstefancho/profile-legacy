@@ -7,17 +7,27 @@ import url from '../../json/url.json';
 const initialMessage = 'Copy to Clipboard';
 const copied = 'Copied!';
 
-interface RenderIcon {
+type RenderIcon = {
   href: string;
   src: string;
   alt?: string;
-}
+};
 
-const RenderIcon: React.FC<RenderIcon> = ({ href, src, alt }) => {
+type RenderCustomIcon = {
+  render: () => ReactElement;
+};
+
+type RenderIconProps = RenderIcon | RenderCustomIcon;
+
+const RenderIcon = (props: RenderIconProps) => {
+  if ('render' in props) {
+    return props.render();
+  }
+
   return (
     <div className='icon'>
-      <a href={href} target='_blank'>
-        <img src={src} alt={alt} />
+      <a href={props.href} target='_blank'>
+        <img src={props.src} alt={props.alt} />
       </a>
     </div>
   );
@@ -47,11 +57,21 @@ export const Icons: React.FC = () => {
     <div className='icon-container d-flex justify-content-between'>
       <RenderIcon href={url.github} src={Github} alt='github' />
       <RenderIcon href={url.blog} src={Blog} alt='blog' />
-      <OverlayTrigger placement='top-start' overlay={renderToolTip}>
-        <div onClick={onClickCopyGmail} onMouseLeave={onMouseLeaveIcon}>
-          <RenderIcon href={`mailto:${url.gmail}`} src={Gmail} alt='gmail' />
-        </div>
-      </OverlayTrigger>
+      <RenderIcon
+        render={() => (
+          <OverlayTrigger placement='top-start' overlay={renderToolTip}>
+            <div
+              className='icon'
+              onClick={onClickCopyGmail}
+              onMouseLeave={onMouseLeaveIcon}
+            >
+              <a href={`mailto:${url.gmail}`} target='_blank'>
+                <img src={Gmail} alt={'gmail'} />
+              </a>
+            </div>
+          </OverlayTrigger>
+        )}
+      />
       <RenderIcon
         href={url.stackoverflow}
         src={Stackoverflow}
