@@ -1,7 +1,7 @@
 import { ReactElement, useState } from 'react';
 import { OverlayTrigger, Tooltip } from 'react-bootstrap';
 import { OverlayChildren } from 'react-bootstrap/esm/Overlay';
-import { Github, Blog, Gmail, Stackoverflow } from '../../svg';
+import { Github, Blog, Gmail, Stackoverflow, Linkedin } from '../../svg';
 import url from '../../json/url.json';
 
 const initialMessage = 'Copy to Clipboard';
@@ -58,6 +58,12 @@ export const Icons: React.FC = () => {
       <RenderIcon href={url.github} src={Github} alt='github' />
       <RenderIcon href={url.blog} src={Blog} alt='blog' />
       <RenderIcon
+        href={url.stackoverflow}
+        src={Stackoverflow}
+        alt='stackoverflow'
+      />
+      <RenderIcon href={url.linkedin} src={Linkedin} alt='linkedin' />
+      <RenderIcon
         render={() => (
           <OverlayTrigger placement='top-start' overlay={renderToolTip}>
             <div
@@ -71,11 +77,6 @@ export const Icons: React.FC = () => {
             </div>
           </OverlayTrigger>
         )}
-      />
-      <RenderIcon
-        href={url.stackoverflow}
-        src={Stackoverflow}
-        alt='stackoverflow'
       />
     </div>
   );
