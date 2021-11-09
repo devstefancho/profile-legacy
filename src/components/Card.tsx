@@ -10,7 +10,6 @@ export const Card: React.FC<CardProps> = ({ id, title, desc }) => {
     <div className='card-box'>
       <section className='card-title'>{title}</section>
       <section className='d-flex'>
-        <div className='card-bar'>&nbsp;</div>
         <div className='card-desc'>{renderDesc}</div>
       </section>
     </div>

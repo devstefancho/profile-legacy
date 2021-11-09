@@ -6,7 +6,9 @@
     $title: 3rem;
     font-size: $title;
     font-weight: 500;
+    font-style: italic;
     color: $primary-color;
+    margin-bottom: 1rem;
 
     &::after {
       content: '';
@@ -19,13 +21,19 @@
     }
   }
 
-  .card-bar {
-    height: 10rem;
-    margin-right: 1rem;
-    border-left: 1rem solid rgba($icon-color, 0.5);
-  }
-
   .card-desc {
+    $margin-left: 2rem;
     font-size: 1.5rem;
+    position: relative;
+    margin-left: $margin-left;
+    line-height: 3rem;
+
+    &::before {
+      content: '';
+      position: absolute;
+      height: 100%;
+      left: -$margin-left;
+      border-left: 1rem solid rgba($icon-color, 0.5);
+    }
   }
 }
