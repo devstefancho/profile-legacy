@@ -5,6 +5,7 @@
   .card-title {
     $title: 3rem;
     font-size: $title;
+    font-weight: 500;
     color: $primary-color;
 
     &::after {

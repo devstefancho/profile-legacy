@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Poor+Story&display=swap');
+
 $bp-mobile: 37.5em; // 600px
+$font-noto-sans: 'Noto Sans KR', sans-serif;
 
 * {
   margin: 0;
@@ -11,4 +14,9 @@ html {
   @media (max-width: $bp-mobile) {
     font-size: 50%;
   }
+}
+
+body {
+  font-family: $font-noto-sans;
+  font-weight: 300;
 }
