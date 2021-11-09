@@ -1,5 +1,6 @@
 export * from './Layout';
 export * from './Details';
-export * from './Main';
+export * from './Content';
 export * from './Resume';
 export * from './profile';
+export * from './Card';

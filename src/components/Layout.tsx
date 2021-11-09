@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { Main, ProfileContainer, Details } from '.';
+import { Content, ProfileContainer, Details } from '.';
 
 export const Layout: React.FC = () => {
   return (
@@ -9,7 +9,7 @@ export const Layout: React.FC = () => {
           <ProfileContainer />
         </section>
         <section className='main'>
-          <Main />
+          <Content />
           <Switch>
             <Route path='/resume'>
               <Details />

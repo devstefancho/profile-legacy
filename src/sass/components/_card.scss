@@ -1,0 +1,30 @@
+.card-box {
+  position: relative;
+  margin: 5rem 0;
+
+  .card-title {
+    $title: 3rem;
+    font-size: $title;
+    color: $primary-color;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 20rem;
+      transform: translateY($title + 1rem);
+      border: 1px solid $primary-color;
+    }
+  }
+
+  .card-bar {
+    height: 10rem;
+    margin-right: 1rem;
+    border-left: 1rem solid rgba($icon-color, 0.5);
+  }
+
+  .card-desc {
+    font-size: 1.5rem;
+  }
+}
