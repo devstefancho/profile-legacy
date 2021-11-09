@@ -5,14 +5,14 @@ interface CardProps {
 }
 
 export const Card: React.FC<CardProps> = ({ id, title, desc }) => {
-  const renderDesc = desc.map((item: string) => <div>{item}</div>);
+  const renderDesc = desc.map((item: string) => <div key={item}>{item}</div>);
   return (
     <div className='card-box'>
-      <div className='card-title'>{title}</div>
-      <div className='d-flex'>
+      <section className='card-title'>{title}</section>
+      <section className='d-flex'>
         <div className='card-bar'>&nbsp;</div>
-        <p className='card-desc'>{renderDesc}</p>
-      </div>
+        <div className='card-desc'>{renderDesc}</div>
+      </section>
     </div>
   );
 };
