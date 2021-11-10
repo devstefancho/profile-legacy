@@ -15,27 +15,33 @@
     "desc": [
       {
         "content": "React and Typescript: Build a Portfolio Project",
-        "url": "https://www.udemy.com/course/react-and-typescript-build-a-portfolio-project/"
+        "url": "https://www.udemy.com/course/react-and-typescript-build-a-portfolio-project/",
+        "icon": "vscode-icons:file-type-typescript-official"
       },
       {
         "content": "Modern React with Redux",
-        "url": "https://www.udemy.com/course/react-redux/"
+        "url": "https://www.udemy.com/course/react-redux/",
+        "icon": "redux"
       },
       {
         "content": "Advanced CSS and Sass: Flexbox,  Grid, Animations and More!",
-        "url": "https://www.udemy.com/course/advanced-css-and-sass/"
+        "url": "https://www.udemy.com/course/advanced-css-and-sass/",
+        "icon": "sass"
       },
       {
         "content": "Master the Coding Interview: Data Structures + Algorithms",
-        "url": "https://www.udemy.com/course/master-the-coding-interview-data-structures-algorithms/"
+        "url": "https://www.udemy.com/course/master-the-coding-interview-data-structures-algorithms/",
+        "icon": "carbon:data-vis-1"
       },
       {
         "content": "Webpack 2: The Complete Developer's Guide",
-        "url": "https://www.udemy.com/course/webpack-2-the-complete-developers-guide/"
+        "url": "https://www.udemy.com/course/webpack-2-the-complete-developers-guide/",
+        "icon": "webpack"
       },
       {
         "content": "JavaScript: The Advanced Concepts",
-        "url": "https://www.udemy.com/course/advanced-javascript-concepts/"
+        "url": "https://www.udemy.com/course/advanced-javascript-concepts/",
+        "icon": "javascript"
       }
     ]
   },
@@ -64,16 +70,21 @@
     "id": "4",
     "title": "Skills",
     "desc": [
-      { "content": "HTML" },
-      { "content": "CSS" },
-      { "content": "Javascript" },
-      { "content": "React" },
-      { "content": "Redux" },
-      { "content": "Sass" },
-      { "content": "Webpack" },
-      { "content": "Git & Github" },
-      { "content": "Jira" },
-      { "content": "Notion" }
+      { "content": "HTML", "icon": "html-5" },
+      { "content": "CSS", "icon": "css-3" },
+      { "content": "Javascript", "icon": "javascript" },
+      {
+        "content": "Typescript",
+        "icon": "vscode-icons:file-type-typescript-official"
+      },
+      { "content": "React", "icon": "react" },
+      { "content": "Redux", "icon": "redux" },
+      { "content": "Sass", "icon": "sass" },
+      { "content": "Webpack", "icon": "webpack" },
+      { "content": "Git", "icon": "cib:git" },
+      { "content": "Github", "icon": "ant-design:github-filled" },
+      { "content": "Jira", "icon": "jira" },
+      { "content": "Notion", "icon": "cib:notion" }
     ]
   },
   {
@@ -81,19 +92,23 @@
     "title": "My Favorite Blog Post",
     "desc": [
       {
+        "icon": "fa-solid:blog",
         "content": "[Velog] Scroll event in react",
         "url": "https://velog.io/@devstefancho/react-scroll-event-5e1vuub9"
       },
       {
+        "icon": "fa-solid:blog",
         "content": "[Tistory] Understanding on css position",
         "url": "https://devstefancho.tistory.com/12?category=938320"
       },
       {
-        "content": "[Notion] About git",
+        "icon": "cib:notion",
+        "content": "About git",
         "url": "https://devstefancho.notion.site/Git-2cd519c34fb54cc6a30e9d58c0acdc3c"
       },
       {
-        "content": "[Notion] About vim",
+        "icon": "cib:notion",
+        "content": "About vim",
         "url": "https://devstefancho.notion.site/Vim-fb15b6466c8341f08d7484b823347be3"
       }
     ]

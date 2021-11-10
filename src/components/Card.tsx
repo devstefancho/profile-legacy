@@ -1,7 +1,9 @@
+import { Icon } from '@iconify/react';
 interface DescItem {
   content: string;
   period?: string;
   url?: string;
+  icon?: string;
 }
 
 interface CardProps {
@@ -10,12 +12,22 @@ interface CardProps {
   desc: DescItem[];
 }
 
+const getIconName = (icon: string) => {
+  return /[:]/.test(icon) ? icon : `logos:${icon}`;
+};
+
 export const Card: React.FC<CardProps> = ({ id, title, desc }) => {
   const renderDesc = desc.map((item) => {
-    if (item.url) {
+    if (item.url && item.icon) {
       return (
-        <a key={title} href={item.url} target='_blank'>
-          <div>{item.content}</div>
+        <a
+          key={title}
+          href={item.url}
+          target='_blank'
+          className='d-flex align-items-center'
+        >
+          <Icon icon={getIconName(item.icon)} />
+          <div className='p-2'>{item.content}</div>
         </a>
       );
     }
@@ -28,7 +40,20 @@ export const Card: React.FC<CardProps> = ({ id, title, desc }) => {
         </div>
       );
     }
-    return <div key={title}>{item.content}</div>;
+
+    if (item.icon) {
+      return (
+        <div key={title} className='d-flex align-items-center'>
+          <Icon icon={getIconName(item.icon)} />
+          <div className='p-2'>{item.content}</div>
+        </div>
+      );
+    }
+    return (
+      <div key={title}>
+        <div>{item.content}</div>
+      </div>
+    );
   });
 
   return (
