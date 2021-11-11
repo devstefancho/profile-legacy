@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/profile/static/css/main.be7d6991.chunk.css",
+    "main.css": "/profile/static/css/main.7d70a540.chunk.css",
     "main.js": "/profile/static/js/main.d2f3df80.chunk.js",
     "main.js.map": "/profile/static/js/main.d2f3df80.chunk.js.map",
     "runtime-main.js": "/profile/static/js/runtime-main.7e67f60b.js",
@@ -8,7 +8,7 @@
     "static/js/2.70e8e294.chunk.js": "/profile/static/js/2.70e8e294.chunk.js",
     "static/js/2.70e8e294.chunk.js.map": "/profile/static/js/2.70e8e294.chunk.js.map",
     "index.html": "/profile/index.html",
-    "static/css/main.be7d6991.chunk.css.map": "/profile/static/css/main.be7d6991.chunk.css.map",
+    "static/css/main.7d70a540.chunk.css.map": "/profile/static/css/main.7d70a540.chunk.css.map",
     "static/js/2.70e8e294.chunk.js.LICENSE.txt": "/profile/static/js/2.70e8e294.chunk.js.LICENSE.txt",
     "static/media/blog.c4981c9d.svg": "/profile/static/media/blog.c4981c9d.svg",
     "static/media/github.50c72c9f.svg": "/profile/static/media/github.50c72c9f.svg",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.7e67f60b.js",
     "static/js/2.70e8e294.chunk.js",
-    "static/css/main.be7d6991.chunk.css",
+    "static/css/main.7d70a540.chunk.css",
     "static/js/main.d2f3df80.chunk.js"
   ]
 }
